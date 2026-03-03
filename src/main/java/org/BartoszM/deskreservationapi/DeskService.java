@@ -42,7 +42,6 @@ public class DeskService {
             updatedDesk.setEmployeeName(null);
         }
 
-        existingDesk.setDeskNumber(updatedDesk.getDeskNumber());
         existingDesk.setAvailable(updatedDesk.isAvailable());
         existingDesk.setEmployeeName(updatedDesk.getEmployeeName());
 

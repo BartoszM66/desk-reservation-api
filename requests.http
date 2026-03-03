@@ -6,28 +6,28 @@ POST http://localhost:8080/desks
 Content-Type: application/json
 
 {
-  "deskNumber": "2",
+  "deskNumber": "3",
   "employeeName": "Dariusz Nowak"
 }
 
 ### Usuń wydatek o ID {id}
-DELETE http://localhost:8080/desks/1
+DELETE http://localhost:8080/desks/3
 
 ### Zaktualizuj wydatek o ID {id}
-PUT http://localhost:8080/desks/1
+PUT http://localhost:8080/desks/2
 Content-Type: application/json
 
 {
-  "deskNumber": "1",
+  "deskNumber": "2",
   "available": true
 }
 
 ### Zaktualizuj wydatek o ID {id}
-PUT http://localhost:8080/desks/1
+PUT http://localhost:8080/desks/2
 Content-Type: application/json
 
 {
-  "deskNumber": "1",
+  "deskNumber": "2",
   "employeeName": "Kacper Noga"
 }
 
