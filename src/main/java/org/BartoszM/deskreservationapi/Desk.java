@@ -18,11 +18,10 @@ public class Desk {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     @NotBlank(message = "Numer biurka jest wymagany!")
     private String deskNumber;
 
     private boolean isAvailable;
-
-    @NotBlank(message = "Imię pracownika nie może być puste!")
     private String employeeName;
 }

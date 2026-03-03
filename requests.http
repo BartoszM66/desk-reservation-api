@@ -6,8 +6,8 @@ POST http://localhost:8080/desks
 Content-Type: application/json
 
 {
-  "deskNumber": "1",
-  "employeeName": "Jan Kowalski"
+  "deskNumber": "2",
+  "employeeName": "Dariusz Nowak"
 }
 
 ### Usuń wydatek o ID {id}
@@ -19,7 +19,16 @@ Content-Type: application/json
 
 {
   "deskNumber": "1",
-  "employeeName": "Dariusz Nowak"
+  "available": true
+}
+
+### Zaktualizuj wydatek o ID {id}
+PUT http://localhost:8080/desks/1
+Content-Type: application/json
+
+{
+  "deskNumber": "1",
+  "employeeName": "Kacper Noga"
 }
 
 ### Próba dodania zepsutego wydatku
@@ -27,6 +36,6 @@ POST http://localhost:8080/desks
 Content-Type: application/json
 
 {
-  "deskNumber": " ",
+  "deskNumber": "1",
   "employeeName": ""
 }
